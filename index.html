@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/customerized.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.size {
+      		font-size: 12px;
+			}
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+             text-transform: none;
+		  	}
+		  .twocolumn {
+			display: grid;
+			grid-template-columns: 0.7fr 1fr;
+			font-size: 24px;
+			grid-gap: 10px;
+			text-align: left;
+			}
+			.wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 200px 50px 200px 50px;
+			grid-gap: 10px;
+		}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+					## IEOR E1000 
+					### Frontiers in Operations Research and Data Analytics
+					<br></br>
+
+					### Spring 2022
+					---
+					## Part 1: Course Logistics 
+					## Part 2: Simulation in OR
+<br></br>
+					### Presenter: Yi Zhang
+						 
+					---
+					<h2 >A <font size="1">little</font> Bit About Me </h2>
+					<img src="https://ctl.columbia.edu/files/2020/05/yi-zhang.png" width="240" height="240"> </img>
+
+					* Yi Zhang
+					* Director of IEOR undergraduate studies
+					* Courses: Foundations of Data Science, Simulation, Business Analytics
+
+					</textarea>
+				</section>	
+				<section>
+					<h2>Operations Research</h2>
+					<div class="twocolumn">
+						<div>
+							<ul stype="display: block">	
+							<img src="https://www.or.psu.edu/files/2020/04/OR-diagram-e1586897929559-768x710.jpg" width="440" height="360">
+							<p class="size">Source:<a href="https://www.or.psu.edu"> PennState</a></p>
+							</ul>
+						</div>
+						<div>
+							<ul stype="display: block">
+								<li>Studies techniques and methods to improve the <b>efficiency of industrial and social operations</b>powered by <b>data-driven</b> decisions. </li>
+								<br>
+								<br>
+								<li>Widely applied in various fields, including information technologies, financial engineering, service sciences, business modeling, transportation, and healthcare</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Course Introduction
+						* Designed for first-year undergraduates 
+						* Introduce modern approaches and ideas of operations research and data analytics
+						* Engage in activities and explore OR topics with IEOR faculty members 
+						---
+				
+						## Course Format
+						* Meet once a week for 60 minutes
+						* 11 sessions in total
+						* Each week, a faculty member presents a topic in the IEOR domain.
+						* Various interactive presentation format
+						---
+						## Performance Assessment
+						<ul>
+						<li>  P/F grade </li>
+						<li> In-person attendance is required</li>
+						<ul class="fragment">
+						<li> In case of emergencies </li>
+						<font size="6" color="red">
+						<ul >
+							<li>1st/2nd missed class: No penalty</li>
+							<li>3rd/4th missed class: Summary report of the presentation </li>
+						    <ul>Submit your report to Yi Zhang (<a href="mailto:yz3558@gmail.com">yz3558@gmail.com</a>) </ul>
+							<li>More than 4 missed class: Sorry, F</li>
+						</ul>
+					</ul>
+						</font>
+						---
+						## Speaker Line-up (Part I)
+						|<font size="4">Date</font>|<font size="4">Instructor</font>|<font size="4">Topic</font>|
+						|---|---|--|
+						| <font size="4">Jan 28 (Zoom)</font>| <font size="4">Yi Zhang</font>| <font size="4">Course logistics/Simulation in OR</font>|
+						|<font size="4">Feb 4</font>|<font size="4">Adam Elmachtoub</font>|<font size="4">Selling random stuff</font>|
+						| <font size="4">Feb 11</font>| <font size="4">Yuri Faenza</font>| <font size="4">Stable matching in school choice and refugree settlement</font>|
+						|<font size="4">Feb 18</font>|<font size="4">Shipra Agrawal</font>|<font size="4">Reinforcement learning and multi-arm bandit</font>|
+						|<font size="4">Feb 25</font>|<font size="4">Ali Hirsa</font>|<font size="4">Visualization in Machine Learning</font>|
+						|<font size="4">Mar 4</font>|<font size="4">Rachel Cummings</font>|<font size="4">Data and Privacy|
+						---
+						## Speaker Line-up (Part Rest)
+						### <font color="red"> Mar 11/18 : No Class </font>
+						<img src="https://cdn.dribbble.com/users/749365/screenshots/14331275/083.png?compress=1&resize=400x300">
+						---
+						## Speaker Line-up (Part II)
+						|<font size="4">Date</font>|<font size="4">Instructor</font>|<font size="4">Topic</font>|
+						|---|---|--|
+						|<font size="4">Mar 25</font>|<font size="4">Eric Balkanski</font>|<font size="4">Combinatorial optimization in machine learning</font>|
+						|<font size="4">Apr 1</font>|<font size="4">Wenpin Tang</font>|<font size="4">Fintech I</font>|
+						|<font size="4">Apr 8</font>|<font size="4">Chris Dolan</font>|<font size="4">Casual inference and DAG</font>|
+						|<font size="4">Apr 15</font>|<font size="4">Mingliu Chen</font>|<font size="4">Fintech II</font>|
+						|<font size="4">Apr 22</font>|<font size="4">Jay Sethuraman</font>|<font size="4">Selection problems</font>|
+						---
+						## Simulation in Operations Research
+
+						<br></br>
+					
+						### Yi Zhang 
+						### Jan 28, 2022
+						---
+						<section data-background-image="https://pngimg.com/uploads/lightning/lightning_PNG43.png" 
+						data-background-size="1200px" >
+						<h2>What is Simulation?</h2>
+						<ul>
+						<li class="fragment">A broad term related to the generalization, modeling, and analysis of real-world processes or systems with the help of mathematics, statistics theories and computer programming.</li>
+						<li class="fragment">Decision-makers heavily rely on simulation for business recommendations, especially when a real-world system is costly (or even impossible) to implement and analyze.</li>	
+						</ul>  
+						</section>
+						---
+						## Coin Flip Simulation
+						
+
+						<img  width="250" height="250" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1110551.jpg"></img>
+						
+						How to simulate a coin flip?
+						---
+						<h2>Simulating a coin flip</h2>
+						<div class="twocolumn">
+							<div>
+									<ul >
+										 <li> Generate a random number $u$<pre ><code data-trim data-noescape>=rand()</code></pre></li> 
+										<li> Convert the random number to head/tail</li>
+										<ul>
+											<li> If $u<0.5$, we get a head (1)</li>
+											<li> Otherwise, we get a tail (0) </li>
+										<pre ><code data-trim data-noescape>=if(A2<0.5,1,0)</code></pre>
+										</ul>
+									 
+									</ul>
+								
+							</div>
+							<div>
+								<ul stype="display: block">	
+									<iframe width="700" height="400"  frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1foIzecP5wnuHRJ3nwhfzlgteAsejazmPWPbhjiityA8/edit?usp=sharing"></iframe>
+								</ul>
+							</div>
+
+						</div>
+						---
+						## Simulate $\pi$
+						<img  class="fragment" width="250" height="300" src="https://static.us.edusercontent.com/files/u81PidLo6y1VVdDQGIvEKmde">
+						<p class="fragment">
+						$Ratio=\frac{Area_{circle}}{Area_{Square}}=\frac{\pi r^2}{4 r^2}=\frac{\pi}{4}$
+						</p>
+						<p class="fragment">
+						Thus, $\pi=Ratio\times4$
+						</p>
+						---
+						## Simulate $\pi$	
+						* Algorithm
+						<font size="5">
+						<ul>
+						 
+							<li>Throw many dots randomly onto the square</li>
+							 
+							<li> Calculate the percentage of dots fall into the circle ($\widehat{Ratio}$)</li>
+							<li> $\widehat{\pi}=\widehat{Ratio}\times4$</li>
+						</ul>
+					</font>
+					<iframe width="650" height="450" frameborder="0" scrolling="no" src="https://plotly.com/~yzh.fred/33.embed?showlink=false "  showlink=false></iframe>					
+						---
+						<h2>Simulation Exercise</h2>
+						<img  width="250" height="150" src="https://d21xlh2maitm24.cloudfront.net/nyc/Transparent-Bike.png?mtime=20160420134420"></img>
+							
+						 
+						<font size="6">
+						<ul> 
+								 
+								<li class="fragment">3 bikes are at a station at the beginning of the first time unit</li>
+							</p>
+								<li class="fragment">During each time unit,</li>
+								<ul class="fragment"> 
+									<li>rent: zero bikes with 50% chance, one bike with 50% chance </li>
+									<li>return: zero bikes with 90% chance, one bike with 10% chance</li>
+								</ul>
+								<li class="fragment"> Bike can only be returned at the end of each time unit</li>
+										<li class="fragment"> During which time unit does the number of bikes at the station drops to 0 for the first time?</li>
+								</ul>
+							</font>	 
+	
+						---
+						<h2>Simulating Coin Flip</h2>
+						<div class="twocolumn">
+							<div>
+									<ul >
+										 <li>3 bikes to start</li> 
+										<li>bike status</li>
+										<ul>
+											<li>rented out: $p_{out}=0.5$ </li>
+											<li>returned: $p_{in}=0.1$ </li>
+			
+										</ul>
+									 
+									</ul>
+									<a /href="https://docs.google.com/spreadsheets/d/1tmImDlzLTGfUj1YPIY2RRpZsgAl6pbfdEPIklJ_wlXY/edit?usp=sharing" target="_blank">workbook</a>
+								
+							</div>
+							<div>
+								<ul stype="display: block">	
+									<iframe width="900" height="400"  frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1tmImDlzLTGfUj1YPIY2RRpZsgAl6pbfdEPIklJ_wlXY/edit?usp=sharing"></iframe>
+								</ul>
+							</div>
+
+						</div>
+						---
+
+						<section>
+							<h2>Simluation Result</h2>
+							<img  width="350" height="200" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAEGCAYAAAB/+QKOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4yLjIsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy+WH4yJAAAWAElEQVR4nO3df7AdZ33f8fcHGZnf2NgaGixTuVhpKn7EBCFISiiFwZFxghIqg8wvO3FrMkQp7RQS0c44jhJmRBpwmOB2ULGxMSXCcUqixEoFiZmSYRyia2MMsnERRsFyCBa2+eEyxhH+9o9dTQ5Hj6SjH3vPkfR+zdy5u88+e+737ozuR/vs7rOpKiRJGveYaRcgSZpNBoQkqcmAkCQ1GRCSpCYDQpLUdNK0CzhaTj/99FqyZMm0y5CkY8ott9zyzapa1Np23ATEkiVLmJubm3YZknRMSfK3+9vmEJMkqcmAkCQ1GRCSpCYDQpLUZEBIkpoMCElSkwEhSWoyICRJTQaEJKnpuHmS+nAsWXfjfrft3HD+QbdL0vHMMwhJUpMBIUlqMiAkSU0GhCSpyYCQJDUZEJKkpkEDIsnKJHcl2ZFkXWP7S5PcmmRPktWN7U9JsivJ+4esU5K0r8ECIskC4ErgPGAZcGGSZWPdvgZcDHx0Px/zW8Cnh6pRkrR/Q55BrAB2VNXdVfUIsAlYNdqhqnZW1e3Ao+M7J3kB8HTgEwPWKEnajyED4gzgnpH1XX3bQSV5DPAe4O0D1CVJmsCsXqR+K7ClqnYdqFOSS5PMJZnbvXv3PJUmSSeGIediuhc4c2R9cd82iZ8EfjrJW4EnAQuTPFRVP3Shu6o2AhsBli9fXkdesiRpryEDYhuwNMlZdMGwBnj9JDtW1Rv2Lie5GFg+Hg6SpGENNsRUVXuAtcBW4E7g+qranmR9klcDJHlhkl3ABcAHkmwfqh5J0qEZdLrvqtoCbBlru2xkeRvd0NOBPuMa4JoBypMkHcCsXqSWJE2ZASFJajIgJElNBoQkqcmAkCQ1GRCSpCYDQpLUNOhzEMe7Jetu3O+2nRvOn8dKJOno8wxCktRkQEiSmgwISVKTASFJajIgJElNBoQkqcmAkCQ1GRCSpCYDQpLUZEBIkpoMCElSkwEhSWoaNCCSrExyV5IdSdY1tr80ya1J9iRZPdJ+TpKbk2xPcnuS1w1ZpyRpX4MFRJIFwJXAecAy4MIky8a6fQ24GPjoWPv3gDdX1bOBlcDvJTllqFolSfsacrrvFcCOqrobIMkmYBVwx94OVbWz3/bo6I5V9X9Hlv8uyX3AIuBbA9YrSRox5BDTGcA9I+u7+rZDkmQFsBD4SmPbpUnmkszt3r37sAuVJO1rpi9SJ/kR4DrgF6vq0fHtVbWxqpZX1fJFixbNf4GSdBwbMiDuBc4cWV/ct00kyVOAG4H/UlV/fZRrkyQdxJABsQ1YmuSsJAuBNcDmSXbs+38c+HBV3TBgjZKk/RgsIKpqD7AW2ArcCVxfVduTrE/yaoAkL0yyC7gA+ECS7f3urwVeClyc5Lb+65yhapUk7WvIu5ioqi3AlrG2y0aWt9ENPY3v9xHgI0PWJkk6sJm+SC1Jmh4DQpLUZEBIkpoMCElSkwEhSWoyICRJTQaEJKnJgJAkNRkQkqQmA0KS1DToVBsnuiXrbmy279xw/jxXIkmHzjMISVKTASFJajIgJElNBoQkqcmAkCQ1GRCSpCYDQpLUdFw/B7G/5xDAZxEk6WAGPYNIsjLJXUl2JFnX2P7SJLcm2ZNk9di2i5J8uf+6aMg6JUn7GiwgkiwArgTOA5YBFyZZNtbta8DFwEfH9n0a8BvAi4AVwG8kOXWoWiVJ+xryDGIFsKOq7q6qR4BNwKrRDlW1s6puBx4d2/dngE9W1QNV9SDwSWDlgLVKksYMGRBnAPeMrO/q247avkkuTTKXZG737t2HXagkaV/H9F1MVbWxqpZX1fJFixZNuxxJOq4MGRD3AmeOrC/u24beV5J0FAwZENuApUnOSrIQWANsnnDfrcC5SU7tL06f27dJkubJYAFRVXuAtXR/2O8Erq+q7UnWJ3k1QJIXJtkFXAB8IMn2ft8HgN+iC5ltwPq+TZI0TwZ9UK6qtgBbxtouG1neRjd81Nr3auDqIeuTJO3fMX2RWpI0HANCktRkQEiSmgwISVKTASFJajIgJElNBoQkqcmAkCQ1GRCSpCYDQpLUZEBIkpoMCElS00QBkeRtSZ6SzlVJbk1y7tDFSZKmZ9IziF+qqu/QvZfhVOBNwIbBqpIkTd2kAZH++6uA66pq+0ibJOk4NGlA3JLkE3QBsTXJk4FHhytLkjRtk74w6BLgHODuqvpektOAXxyurBPDknU3Ntt3bjh/niuRpH1Negbxyaq6taq+BVBV9wNXDFeWJGnaDngGkeRxwBOA05Ocyj9ed3gKcMbAtUmSpuhgZxBvAW4Bfqz/vvfrT4D3H+zDk6xMcleSHUnWNbafnORj/fbPJlnStz82ybVJvpDkziTvPLRfS5J0pA54BlFV7wPel+RXq+r3D+WDkywArgReCewCtiXZXFV3jHS7BHiwqs5OsgZ4N/A64ALg5Kp6bpInAHck+YOq2nkoNUiSDt9EF6mr6veT/BSwZHSfqvrwAXZbAeyoqrsBkmwCVgGjAbEKuLxfvgF4f5IABTwxyUnA44FHgO9MUqsk6eiYKCCSXAc8C7gN+EHfXMCBAuIM4J6R9V3Ai/bXp6r2JPk2cBpdWKwCvk53DeQ/VtUDjbouBS4FeOYznznJryJJmtCkt7kuB5ZVVQ1ZzIgVdEH0DLont/8qyV/sPRvZq6o2AhsBli9fPl+1SdIJYdLbXL8I/JND/Ox7gTNH1hf3bc0+/XDSU4H7gdcD/7uq/qGq7gM+QxdSkqR5MmlAnE53oXhrks17vw6yzzZgaZKzkiwE1gDj+2wGLuqXVwM39WcpXwNeDpDkicCLgS9NWKsk6SiYdIjp8kP94P6awlpgK7AAuLqqtidZD8xV1WbgKuC6JDuAB+hCBLq7nz6UZO+cTx+qqtsPtQZJ0uGb9C6m/3M4H15VW4AtY22XjSw/THdL6/h+D7XaJUnzZ9K7mL5Ld9cSwELgscD/q6qnDFWYJGm6Jj2DePLe5f45hVV01wUkScepQ37laHX+GPiZAeqRJM2ISYeYXjOy+hi6W04fHqQiSdJMmPQupp8bWd4D7KQbZpIkHacmvQbhy4Ek6QQz0TWIJIuTfDzJff3XHyVZPHRxkqTpmfQi9Yfonnp+Rv/1p32bJOk4NWlALKqqD1XVnv7rGmDRgHVJkqZs0oC4P8kbkyzov95IN6meJOk4NWlA/BLwWuDv6d7RsBq4eKCaJEkzYNLbXNcDF1XVgwBJngb8Ll1wSJKOQ5MGxPP2hgNAVT2Q5PkD1aTeknU3Ntt3bjh/niuRdCKadIjpMUlO3bvSn0FMGi6SpGPQpH/k3wPcnOQP+/ULgHcNU5IkaRZM+iT1h5PM0b/lDXhNVd0xXFmSpGmbeJioDwRDQZJOEIc83bck6cRgQEiSmgYNiCQrk9yVZEeSdY3tJyf5WL/9s0mWjGx7XpKbk2xP8oUkjxuyVknSDxssIJIsAK4EzgOWARcmWTbW7RLgwao6G7gCeHe/70nAR4BfrqpnAy8D/mGoWiVJ+xryDGIFsKOq7q6qR4BN7PuSoVXAtf3yDcAr+ndenwvcXlWfB6iq+6vqBwPWKkkaM2RAnAHcM7K+q29r9qmqPcC3gdOAHwUqydYktyb5tdYPSHJpkrkkc7t37z7qv4Aknchm9SL1ScBLgDf0338hySvGO1XVxqpaXlXLFy1y9nFJOpqGDIh7gTNH1hf3bc0+/XWHp9JNI74L+HRVfbOqvgdsAX5iwFolSWOGDIhtwNIkZyVZCKyheyvdqM3ARf3yauCmqipgK/DcJE/og+Nf4UN6kjSvBptwr6r2JFlL98d+AXB1VW1Psh6Yq6rNwFXAdUl2AA/QhQhV9WCS99KFTAFbqqo9takkaRCDzshaVVvohodG2y4bWX6YbuK/1r4fobvVVZI0BbN6kVqSNGUGhCSpyYCQJDUZEJKkJgNCktRkQEiSmga9zVXDWrKu/WjIzg3nz3Mlko5HnkFIkpoMCElSkwEhSWoyICRJTQaEJKnJgJAkNRkQkqQmA0KS1GRASJKaDAhJUpMBIUlqMiAkSU2DBkSSlUnuSrIjybrG9pOTfKzf/tkkS8a2PzPJQ0nePmSdkqR9DRYQSRYAVwLnAcuAC5MsG+t2CfBgVZ0NXAG8e2z7e4E/H6pGSdL+DXkGsQLYUVV3V9UjwCZg1VifVcC1/fINwCuSBCDJzwNfBbYPWKMkaT+GDIgzgHtG1nf1bc0+VbUH+DZwWpInAb8O/OaBfkCSS5PMJZnbvXv3UStckjS7Lwy6HLiiqh7qTyiaqmojsBFg+fLlNT+lHTt8oZCkIzFkQNwLnDmyvrhva/XZleQk4KnA/cCLgNVJfgc4BXg0ycNV9f4B65UkjRgyILYBS5OcRRcEa4DXj/XZDFwE3AysBm6qqgJ+em+HJJcDDxkOkjS/BguIqtqTZC2wFVgAXF1V25OsB+aqajNwFXBdkh3AA3QhIkmaAYNeg6iqLcCWsbbLRpYfBi44yGdcPkhxkqQD8klqSVKTASFJajIgJElNBoQkqcmAkCQ1GRCSpCYDQpLUZEBIkpoMCElS06zO5qp54Gyvkg7EMwhJUpMBIUlqMiAkSU0GhCSpyYCQJDUZEJKkJgNCktRkQEiSmgwISVLToE9SJ1kJvA9YAHywqjaMbT8Z+DDwAuB+4HVVtTPJK4ENwELgEeAdVXXTkLVqXz5pLZ3YBjuDSLIAuBI4D1gGXJhk2Vi3S4AHq+ps4Arg3X37N4Gfq6rnAhcB1w1VpySpbcghphXAjqq6u6oeATYBq8b6rAKu7ZdvAF6RJFX1uar6u759O/D4/mxDkjRPhgyIM4B7RtZ39W3NPlW1B/g2cNpYn38D3FpV3x//AUkuTTKXZG737t1HrXBJ0oxfpE7ybLphp7e0tlfVxqpaXlXLFy1aNL/FSdJxbsiAuBc4c2R9cd/W7JPkJOCpdBerSbIY+Djw5qr6yoB1SpIahgyIbcDSJGclWQisATaP9dlMdxEaYDVwU1VVklOAG4F1VfWZAWuUJO3HYLe5VtWeJGuBrXS3uV5dVduTrAfmqmozcBVwXZIdwAN0IQKwFjgbuCzJZX3buVV131D16tB5G6x0fBv0OYiq2gJsGWu7bGT5YeCCxn6/Dfz2kLVJkg5spi9SS5Kmx4CQJDUZEJKkJgNCktRkQEiSmga9i0knNm+DlY5tnkFIkpoMCElSk0NMmhqHoKTZ5hmEJKnJgJAkNTnEpJnlEJQ0XZ5BSJKaDAhJUpNDTDpmOQQlDcszCElSk2cQOm55hiEdGQNCJywDRDowA0LaDwNEJ7pBAyLJSuB9wALgg1W1YWz7ycCHgRcA9wOvq6qd/bZ3ApcAPwD+fVVtHbJW6VAZIDreDRYQSRYAVwKvBHYB25Jsrqo7RrpdAjxYVWcnWQO8G3hdkmXAGuDZwDOAv0jyo1X1g6HqlY62gwWIAaNZN+QZxApgR1XdDZBkE7AKGA2IVcDl/fINwPuTpG/fVFXfB76aZEf/eTcPWK80U440YI5k+/62je6v41+qapgPTlYDK6vq3/brbwJeVFVrR/p8se+zq1//CvAiutD466r6SN9+FfDnVXXD2M+4FLi0X/3nwF2D/DKd04FvDvj5R8r6joz1HRnrO3zTru2fVtWi1oZj+iJ1VW0ENs7Hz0oyV1XL5+NnHQ7rOzLWd2Ss7/DNcm1DPih3L3DmyPrivq3ZJ8lJwFPpLlZPsq8kaUBDBsQ2YGmSs5IspLvovHmsz2bgon55NXBTdWNem4E1SU5OchawFPibAWuVJI0ZbIipqvYkWQtspbvN9eqq2p5kPTBXVZuBq4Dr+ovQD9CFCH2/6+kuaO8BfmUG7mCal6GsI2B9R8b6joz1Hb6ZrW2wi9SSpGObk/VJkpoMCElSkwExgSQ7k3whyW1J5magnquT3Nc/R7K37WlJPpnky/33U2esvsuT3Nsfw9uSvGpKtZ2Z5FNJ7kiyPcnb+vaZOH4HqG9Wjt/jkvxNks/39f1m335Wks8m2ZHkY/2NKbNU3zVJvjpy/M6ZRn0jdS5I8rkkf9avz8TxG2dATO5fV9U5M3K/8jXAyrG2dcBfVtVS4C/79Wm5hn3rA7iiP4bnVNWWea5prz3Af6qqZcCLgV/pp3aZleO3v/pgNo7f94GXV9WPA+cAK5O8mG6anCuq6mzgQbppdGapPoB3jBy/26ZU315vA+4cWZ+V4/dDDIhjUFV9mu6ur1GrgGv75WuBn5/Xokbsp76ZUFVfr6pb++Xv0v0jPYMZOX4HqG8mVOehfvWx/VcBL6ebLgeme/z2V9/MSLIYOB/4YL8eZuT4jTMgJlPAJ5Lc0k/vMYueXlVf75f/Hnj6NIvZj7VJbu+HoKY2BLZXkiXA84HPMoPHb6w+mJHj1w+P3AbcB3wS+Arwrara03fZxRRDbby+qtp7/N7VH78r+pmkp+X3gF8DHu3XT2OGjt8oA2IyL6mqnwDOozvlf+m0CzqQ/mHDmfpfE/DfgWfRnfZ/HXjPNItJ8iTgj4D/UFXfGd02C8evUd/MHL+q+kFVnUM3w8EK4MemVUvLeH1JngO8k67OFwJPA359GrUl+Vngvqq6ZRo//1AZEBOoqnv77/cBH6f7RzFrvpHkRwD67/dNuZ4fUlXf6P/hPgr8D6Z4DJM8lu6P7/+sqv/VN8/M8WvVN0vHb6+q+hbwKeAngVP66XJgRqbGGalvZT90V/0M0R9iesfvXwKvTrIT2EQ3tPQ+ZvD4gQFxUEmemOTJe5eBc4EvHnivqRidtuQi4E+mWMs+9v7x7f0CUzqG/XjvVcCdVfXekU0zcfz2V98MHb9FSU7plx9P976XO+n+EK/uu03z+LXq+9JI+IdufH8qx6+q3llVi6tqCd3METdV1RuYkeM3ziepDyLJP6M7a4BuapKPVtW7plgSSf4AeBndNMHfAH4D+GPgeuCZwN8Cr62qqVwo3k99L6MbHilgJ/CWkTH/+aztJcBfAV/gH8eA/zPdOP/Uj98B6ruQ2Th+z6O7iLqA7j+Y11fV+v7fySa64ZvPAW/s/7c+K/XdBCwCAtwG/PLIxeypSPIy4O1V9bOzcvzGGRCSpCaHmCRJTQaEJKnJgJAkNRkQkqQmA0KS1GRASIcpySlJ3tovPyPJDQfbRzqWeJurdJj6uZL+rKqeM+VSpEEM9k5q6QSwAXhWPzHcl4F/UVXPSXIx3dO6TwSWAr8LLATeRDcd9auq6oEkzwKupHuA63vAv6uqL83/ryG1OcQkHb51wFf6ieHeMbbtOcBr6CaHexfwvap6PnAz8Oa+z0bgV6vqBcDbgf82L1VLE/IMQhrGp/r3OXw3ybeBP+3bvwA8r5+t9aeAP+ymBwJgmlNQS/swIKRhjM6j8+jI+qN0/+4eQ/cOgKm++lI6EIeYpMP3XeDJh7Nj/46Hrya5ALpZRpP8+NEsTjpSBoR0mKrqfuAzSb4I/NfD+Ig3AJck+Tywne61p9LM8DZXSVKTZxCSpCYDQpLUZEBIkpoMCElSkwEhSWoyICRJTQaEJKnp/wPBGTGDn0VubgAAAABJRU5ErkJggg=="></img>
+							<br>
+							<font size="5">Average value=7.25(Based on 100000 rounds of simulation)</font> 
+							<pre ><code data-trim data-noescape  height="10">
+									 
+									
+										def simulation():
+										  N,i=3,0
+										  while True:
+											i+=1
+											N-=np.random.rand()<0.5
+											if N==0:
+											  break
+											N+=np.random.rand()<0.1
+										  return i
+								</code></pre>
+							  </section>
+						---
+						## Simulations in Operations Research
+						<div class="wrapper">
+							<div class="box1">
+							<img  width="250" height="400" src="https://www.americanwarehouses.com/hubfs/AmericanWarehouses_Blog_TheBestApproachToLeasingWarehouseSpace.jpg"></img>
+							</div>
+								<div class="box2">
+								<img  width="250" height="400" src="https://images.squarespace-cdn.com/content/v1/5845d1c3e4fcb5c4ed9162ef/1574302372587-EV5F51UMXY9AIG8VX7WL/DSC_0122.jpg?format=1500w"></img>
+								</div>
+								<div class="box3">
+								<img  width="250" height="400" src="https://mediacloud.kiplinger.com/image/private/s--x2_BoIgn--/v1604352227/Investing/stock-market-today-110220.jpg"></img>
+								</div>
+								<div class="box4"><font size="6">Inventory System</font></div>
+								<div class="box5"><font size="6">Restaurant</font></div>
+								<div class="box6"><font size="6">Financial Engineering</font></div>
+		
+								<div class="box1">
+										<img  width="250" height="400" src="https://insiderpaper.com/wp-content/uploads/2021/08/E73uJGwXEA0vm49_1200x700-990x578.jpg"></img>
+										</div>
+										<div class="box2">
+										<img  width="250" height="400" src="https://upload.wikimedia.org/wikipedia/commons/8/89/MSR_Simulator.jpg"></img>
+										</div>
+										<div class="box3">
+										<img  width="250" height="400" src="https://cdn.the-scientist.com/assets/articleNo/67646/iImg/38613/uploads/maskexplainer_fullwidth_finalrev.jpg"></img>
+										</div>
+										
+										<div class="box4"><font size="6">Information Technology</font></div>
+										<div class="box5"><font size="6">Hospital</font></div>
+										<div class="box6"><font size="6">Public Policy</font></div>
+										
+							</div>
+							
+				
+					</script>
+				
+
+				</section>
+				 
+				<section>
+				<h2> Covid simulation </h2>
+				<iframe width="760" height="415" src="https://www.youtube.com/embed/H43jHvzWTHU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
